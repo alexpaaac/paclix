@@ -1,0 +1,214 @@
+/* Styles spécifiques pour la page Nos Agents IA */
+.agent-card-transition {
+  transition: all 0.5s ease-in-out;
+}
+
+.agent-card-transition:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.gradient-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.floating-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.blur-gradient {
+  filter: blur(70px);
+}
+
+/* Ajout de styles pour l'intégration des images */
+.agent-image {
+  filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  transition: all 0.5s ease;
+}
+
+.agent-image:hover {
+  filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.08)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.2));
+}
+
+/* Effet de perspective 3D */
+.perspective-container {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+/* Animation de respiration */
+@keyframes breathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+}
+
+.breathe-animation {
+  animation: breathe 6s ease-in-out infinite;
+}
+
+/* Effet de mélange pour les images */
+.blend-multiply {
+  mix-blend-mode: multiply;
+}
+
+.blend-screen {
+  mix-blend-mode: screen;
+}
+
+.blend-overlay {
+  mix-blend-mode: overlay;
+}
+
+/* Effet de halo lumineux */
+.glow-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.glow-effect::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.8) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.glow-effect:hover::before {
+  opacity: 0.5;
+}
+
+/* Effet de particules */
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  pointer-events: none;
+}
+
+/* Animations spécifiques pour chaque agent */
+@keyframes wave {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+}
+.animate-wave {
+  animation: wave 2s infinite ease-in-out;
+  transform-origin: bottom center;
+}
+
+@keyframes hover-tilt {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+}
+.animate-hover-tilt {
+  animation: hover-tilt 4s infinite ease-in-out;
+  transform-origin: center;
+}
+
+@keyframes tap-cravate {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+.animate-tap-cravate {
+  animation: tap-cravate 3s infinite ease-in-out;
+}
+
+@keyframes eyes-glow {
+  0%,
+  100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.5) drop-shadow(0 0 5px rgba(255, 255, 255, 0.7));
+  }
+}
+.animate-eyes-glow {
+  animation: eyes-glow 2.5s infinite ease-in-out;
+}
+
+@keyframes pulse-slow {
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+.animate-pulse-slow {
+  animation: pulse-slow 6s infinite ease-in-out;
+}
+
+/* Animations au survol */
+.animate-wave-hover:hover img {
+  animation: wave 1s infinite ease-in-out;
+  transform-origin: bottom center;
+}
+
+.animate-hover-tilt-hover:hover img {
+  animation: hover-tilt 2s infinite ease-in-out;
+}
+
+.animate-tap-cravate-hover:hover img {
+  animation: tap-cravate 1.5s infinite ease-in-out;
+}
+
+.animate-eyes-glow-hover:hover img {
+  animation: eyes-glow 1.2s infinite ease-in-out;
+}
+
+/* Effet de particules interactives */
+.interactive-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* Effet de carte 3D interactif */
+.card-3d {
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.card-3d:hover {
+  transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
+}
