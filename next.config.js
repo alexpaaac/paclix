@@ -20,7 +20,7 @@ const nextConfig = {
   },
   // Optimisation du chargement
   experimental: {
-    optimizeCss: true, // Optimiser le CSS
+    //optimizeCss: true, // Optimiser le CSS
     optimizePackageImports: ["framer-motion", "lucide-react"], // Optimiser les imports de packages
   },
   async redirects() {
