@@ -22,7 +22,7 @@ export default function MentionsLegales() {
 
                 <h3 className="text-xl font-semibold mt-8 mb-4 text-gray-900">Éditeur du site</h3>
                 <p className="text-gray-700">
-                  Le site Paclix Agency est édité par la société Paclix Agency, SAS au capital de 1 000 euros,
+                  Le site Paclix Agency est édité par la société Paclix Agency, SAS au capital de 100 000 euros,
                   immatriculée au Registre du Commerce et des Sociétés de Paris sous le numéro 123 456 789, dont le
                   siège social est situé au 123 Avenue de l'Innovation, 75008 Paris, France.
                 </p>
